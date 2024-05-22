@@ -144,5 +144,61 @@ button {
     grid-area: auto;
   }
 }
+#third {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid #ff5722;
+  border-radius: 5px;
+}
+#third .content {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+#third .content .ball {
+  width: clamp(50px, 13vw, 150px);
+  height: clamp(50px, 13vw, 150px);
+  margin-inline: auto;
+  border-radius: 50%;
+  background-color: #ff9b7b;
+}
+#third .content span {
+  text-align: center;
+  color: #ff9b7b;
+}
+#third .footer {
+  border-top: 3px solid #ff5722;
+  width: 100%;
+  height: 5vh;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: #ff9b7b;
+}
+#third .footer .socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#third .footer .socials i {
+  font-size: 24px;
+  padding-inline: 5px;
+}
+
+@media (max-width: 767px) {
+  #third .content {
+    height: 90vh;
+  }
+  #third .footer {
+    height: 100%;
+    justify-content: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
