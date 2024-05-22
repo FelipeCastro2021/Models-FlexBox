@@ -1,0 +1,57 @@
+#second
+  display: flex
+  flex-direction: column
+
+  max-width: 700px
+  margin-inline: auto
+  padding: 60px 20px
+
+  background-color: #fccedf
+
+  p
+    font-size: 1.8rem
+    line-height: 1.4
+
+    margin-bottom: 60px
+
+    color: #ef075f
+
+  .image-container
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-auto-rows: 180px
+    gap: 5px 10px
+
+    img
+      border-radius: 5px
+      height: 100%
+      width: 100%
+      object-fit: cover
+      object-position: center
+
+      mix-blend-mode: multiply
+
+      cursor: pointer
+
+      transition: .3s ease-in-out
+
+      &:first-child
+        grid-area: 1 / 1 / 3 / 3
+
+      &:hover
+        filter: contrast(120%)
+
+@media (max-width: 768px)
+  #second
+    .image-container
+      grid-template-columns: repeat(2, 1fr)
+
+@media (max-width: 500px)
+  #second
+    .image-container
+      grid-template-columns: repeat(1, 1fr)
+      grid-auto-rows: 300px
+      gap: 20px
+
+      img:first-child
+        grid-area: auto
