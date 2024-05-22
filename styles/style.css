@@ -211,8 +211,7 @@ button {
   color: #a683d9;
 }
 #fourth .header {
-  flex: 1;
-  max-height: 80px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -232,11 +231,10 @@ button {
   line-height: 1.3;
 }
 #fourth .footer {
-  flex: 1;
-  max-height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 #fourth .footer .socials {
   display: flex;
@@ -246,6 +244,64 @@ button {
 #fourth .footer .socials i {
   font-size: 28px;
   cursor: pointer;
+}
+
+#fifth {
+  border: 5px solid #ff9a00;
+  border-radius: 5px;
+  color: #ffc367;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+}
+#fifth > * {
+  padding: 10px;
+}
+#fifth .header {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+#fifth .header ul {
+  display: flex;
+  gap: 10px;
+}
+#fifth .content {
+  display: flex;
+  flex: 1;
+  padding: 0;
+  border-block: 3px solid #ff9a00;
+}
+#fifth .sidenav {
+  flex: 1 1 180px;
+  border-right: 3px solid #ff9a00;
+}
+#fifth .main {
+  padding: 20px 60px;
+  display: flex;
+  justify-content: center;
+}
+#fifth .main p {
+  max-width: 600px;
+  line-height: 1.4;
+  font-size: 1.8rem;
+}
+#fifth .aside {
+  flex: 1 1 180px;
+  border-left: 3px solid #ff9a00;
+}
+#fifth .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+#fifth .footer .socials {
+  display: flex;
+  gap: 15px;
+}
+#fifth .footer .socials i {
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
