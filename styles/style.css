@@ -200,5 +200,52 @@ button {
     justify-content: center;
   }
 }
+#fourth {
+  border: 5px solid #672cbd;
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+}
+#fourth > * {
+  padding-inline: 20px;
+  color: #a683d9;
+}
+#fourth .header {
+  flex: 0.5;
+  max-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#fourth .header ul {
+  display: flex;
+  gap: 10px;
+}
+#fourth .main {
+  flex: 6;
+  border-block: 5px solid #672cbd;
+  padding-block: 40px;
+}
+#fourth .main p {
+  max-width: 440px;
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+#fourth .footer {
+  flex: 0.5;
+  max-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#fourth .footer .socials {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#fourth .footer .socials i {
+  font-size: 28px;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
