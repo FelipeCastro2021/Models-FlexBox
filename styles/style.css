@@ -211,7 +211,7 @@ button {
   color: #a683d9;
 }
 #fourth .header {
-  flex: 0.5;
+  flex: 1;
   max-height: 80px;
   display: flex;
   justify-content: space-between;
@@ -232,7 +232,7 @@ button {
   line-height: 1.3;
 }
 #fourth .footer {
-  flex: 0.5;
+  flex: 1;
   max-height: 80px;
   display: flex;
   align-items: center;
