@@ -260,6 +260,8 @@ button {
 #fifth .header {
   display: flex;
   justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
   height: 40px;
 }
 #fifth .header ul {
@@ -268,6 +270,7 @@ button {
 }
 #fifth .content {
   display: flex;
+  flex-wrap: wrap;
   flex: 1;
   padding: 0;
   border-block: 3px solid #ff9a00;
@@ -282,7 +285,7 @@ button {
   justify-content: center;
 }
 #fifth .main p {
-  max-width: 600px;
+  max-width: 500px;
   line-height: 1.4;
   font-size: 1.8rem;
 }
@@ -302,6 +305,25 @@ button {
 }
 #fifth .footer .socials i {
   font-size: 24px;
+}
+
+@media (max-width: 1000px) {
+  #fifth .content {
+    flex-direction: column;
+  }
+  #fifth .content .sidenav {
+    max-height: 300px;
+    border-bottom: 3px solid #ff9a00;
+    border-right: none;
+  }
+  #fifth .content .main {
+    flex: 1;
+  }
+  #fifth .content .aside {
+    max-height: 300px;
+    border-top: 3px solid #ff9a00;
+    border-left: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
