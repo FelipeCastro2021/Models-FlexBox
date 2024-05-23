@@ -1,1 +1,29 @@
+#sixth
+  border: 5px solid #00bcd8
+  display: flex
+  flex-wrap: wrap
 
+  > *
+    padding: 20px
+
+    line-height: 1.4
+
+  .content
+    flex: 1 1 200px
+    display: flex
+
+    border-right: 3px solid #00bcd8
+
+    p
+      align-self: end
+
+  .description
+    flex: 4 1 300px
+
+@media (max-width: 600px)
+  #sixth
+    flex-direction: column
+
+    .content
+      border-right: none
+      border-bottom: 3px solid #00bcd8
